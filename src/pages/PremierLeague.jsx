@@ -3,6 +3,7 @@ import StatCard from "../components/comon/StatCard"
 import { motion } from "framer-motion"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 import {ChartNoAxesCombined, Trophy} from "lucide-react"
+import WinnersPL from "../components/PremierLeague/WinnersPL"
 
 export default function PremierLeague() {
   return (
@@ -17,12 +18,15 @@ export default function PremierLeague() {
            animate={{opacity:1, y:0}}
            transition={{duration: 1}}
            >
-            <StatCard name="Goalscores Player" icon={SportsSoccer} value={""} color='#5DADE2'/>
-            <StatCard name="Winners" icon={Trophy} value={""} color='#F5B041'/>
-            <StatCard name="Goalscores Country" icon={SportsSoccerRounded} value={""} color='#58D68D'/>
-            <StatCard name="Editions" icon={ChartNoAxesCombined} value={""} color='#F1948A'/>
+            <StatCard name="Goalscores Player" icon={SportsSoccer} value={"Alan Shearer 260"} color='#5DADE2'/>
+            <StatCard name="Winners" icon={Trophy} value={"Manchester United 20"} color='#F5B041'/>
+            <StatCard name="Current Champions" icon={SportsSoccerRounded} value={"Manchester City"} color='#58D68D'/>
+            <StatCard name="Editions" icon={ChartNoAxesCombined} value={"126"} color='#F1948A'/>
            </motion.div>
 
+           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
+            <WinnersPL/>
+           </div>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
            </div>
         </main>

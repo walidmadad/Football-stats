@@ -28,21 +28,21 @@ const goalsData = [
 
 ];
 
-export default function goalsOverviewChart() {
+export default function GoalsOverview() {
   return (
     <motion.div
-			className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-indigo-900'
+			className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-4 border border-indigo-900'
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2 }}
 		>
 			<h2 className='text-lg font-medium mb-4 text-gray-100'>Goals Overview</h2>
 
-			<div className='h-80 '>
+			<div className='h-80 -ml-10'>
 				<ResponsiveContainer width={"100%"} height={"100%"}>
 					<LineChart data={goalsData}>
-						<CartesianGrid strokeDasharray='3 3' stroke='#4B5563' />
-						<XAxis dataKey={"year"} stroke='#9ca3af' />
+						<CartesianGrid strokeDasharray='2 2' stroke='#4B5563' />
+						<XAxis dataKey={"year"} stroke='#9ca3af' angle={-90} textAnchor="end" height={70}/>
 						<YAxis stroke='#9ca3af' />
 						<Tooltip
 							contentStyle={{

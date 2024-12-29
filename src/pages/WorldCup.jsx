@@ -2,9 +2,11 @@ import { motion } from "framer-motion"
 import Header from "../components/comon/Header"
 import StatCard from "../components/comon/StatCard"
 import {ChartNoAxesCombined, Trophy} from "lucide-react"
-import SalesOverviewChart from "../components/WorldCup/GoalsOverview"
+import GoalsOverview from "../components/WorldCup/GoalsOverview"
 import WinnerWorldCupChart from "../components/WorldCup/WinnerWorldCupChart"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
+import FinalsRecordWC from "../components/WorldCup/FinalsRecordWC"
+import TopScoresWorldCupr from "../components/WorldCup/TopScoresWorldCupr"
 export default function WorldCup() {
   return (
     <div className="flex-1 overflow-auto relative z-10">
@@ -26,7 +28,9 @@ export default function WorldCup() {
 
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <WinnerWorldCupChart/>
-            <SalesOverviewChart/>
+            <GoalsOverview/>
+            <FinalsRecordWC/>
+            <TopScoresWorldCupr/>
            </div>
         </main>
     </div>

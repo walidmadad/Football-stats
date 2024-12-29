@@ -5,6 +5,10 @@ import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 import {ChartNoAxesCombined, Trophy} from "lucide-react"
 import WinnersChampionsLeague from "../components/ChampionsLeague/WinnersChampionsLeague"
 import WinnersByCountry from "../components/ChampionsLeague/WinnersByCountry"
+import TopScoresChampionsLeague from "../components/ChampionsLeague/TopScoresChampionsLeague"
+import TopAssitsChampionsLeague from "../components/ChampionsLeague/TopAssitsChampionsLeague"
+import MatchsPlayedUCL from "../components/ChampionsLeague/MatchsPlayedUCL"
+import MostPenaltiesScoredUCL from "../components/ChampionsLeague/MostPenaltiesScoredUCL"
 
 export default function UCL() {
   return (
@@ -28,6 +32,10 @@ export default function UCL() {
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <WinnersChampionsLeague/>
             <WinnersByCountry/>
+            <TopScoresChampionsLeague/>
+            <TopAssitsChampionsLeague/>
+            <MatchsPlayedUCL/>
+            <MostPenaltiesScoredUCL/>
            </div>
         </main>
     </div>

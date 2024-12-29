@@ -3,19 +3,22 @@ import { motion } from 'framer-motion';
 
 
 const data = [
-    {name : "Brazil", value: 5},
-    {name : "Germany", value: 4},
-    {name : "Italy", value: 4},
-    {name : "Argentine", value: 3},
-    {name : "France", value: 2},
-    {name : "Uruguay", value: 2},
-    {name : "Spain", value: 1},
-    {name : "England", value: 1},
+    {name : "Spain", value: 20},
+    {name : "England", value: 15},
+    {name : "Italy", value: 12},
+    {name : "Germany", value: 8},
+    {name : "Netherlands", value: 6},
+    {name : "Portugal", value: 4},
+    {name : "France", value: 1},
+    {name : "Romania", value: 1},
+    {name : "Scotland", value: 1},
+    {name : "Yugoslavia", value: 1},
+
 ]
 
-const COLORS = ["#FFD700", "#FF4500", "#32CD32", "#1E90FF", "#8A2BE2", "#FF69B4", "#FFA500", "#00CED1"]
+const COLORS = ["#FFD700", "#FF4500", "#32CD32", "#1E90FF", "#8A2BE2", "#FF69B4", "#FFA500", "#00CED1", "#AFD700", "#00D900"]
 
-export default function WinnerWorldCupChart() {
+export default function WinnersByCountry() {
   return (
     <motion.div
 			className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-indigo-900'
@@ -23,7 +26,7 @@ export default function WinnerWorldCupChart() {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2 }}
 		>
-			<h2 className='text-lg font-medium mb-4 text-indigo-100'>WorldCup Winners</h2>
+			<h2 className='text-lg font-medium mb-4 text-indigo-100'>Winners by nation</h2>
 
 			<div className='h-80 '>
             <ResponsiveContainer width="100%" height="100%">

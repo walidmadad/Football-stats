@@ -2,8 +2,8 @@ import { motion } from "framer-motion"
 import Header from "../components/comon/Header"
 import StatCard from "../components/comon/StatCard"
 import {ChartNoAxesCombined, Trophy} from "lucide-react"
-import SalesOverviewChart from "../components/overview/GoalsOverview"
-import WinnerWorldCupChart from "../components/overview/WinnerWorldCupChart"
+import SalesOverviewChart from "../components/WorldCup/GoalsOverview"
+import WinnerWorldCupChart from "../components/WorldCup/WinnerWorldCupChart"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 export default function WorldCup() {
   return (

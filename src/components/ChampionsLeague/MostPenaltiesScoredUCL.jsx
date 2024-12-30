@@ -32,7 +32,6 @@ export default function MostPenaltiesScoredUCL() {
               <motion.div
                 className="relative flex items-center"
                 initial={{ width: 0 }}
-                animate={{ width: `${player.value * 2}%` }} 
                 transition={{ duration: 0.8 }}
               >
                 <div className="h-6 bg-indigo-600 rounded" />

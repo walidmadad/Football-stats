@@ -6,7 +6,7 @@ const data = [
     {name : "Brazil", value: 5},
     {name : "Germany", value: 4},
     {name : "Italy", value: 4},
-    {name : "Argentine", value: 3},
+    {name : "Argentina", value: 3},
     {name : "France", value: 2},
     {name : "Uruguay", value: 2},
     {name : "Spain", value: 1},

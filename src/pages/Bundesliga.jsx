@@ -2,7 +2,7 @@ import Header from "../components/comon/Header"
 import StatCard from "../components/comon/StatCard"
 import { motion } from "framer-motion"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
-import {ChartNoAxesCombined, Trophy} from "lucide-react"
+import { Trophy} from "lucide-react"
 
 export default function Bundesliga() {
   return (
@@ -17,10 +17,11 @@ export default function Bundesliga() {
            animate={{opacity:1, y:0}}
            transition={{duration: 1}}
            >
-            <StatCard name="Goalscores Player" icon={SportsSoccer} value={""} color='#5DADE2'/>
-            <StatCard name="Winners" icon={Trophy} value={""} color='#F5B041'/>
-            <StatCard name="Goalscores Country" icon={SportsSoccerRounded} value={""} color='#58D68D'/>
-            <StatCard name="Editions" icon={ChartNoAxesCombined} value={""} color='#F1948A'/>
+            <StatCard name="Winners" icon={Trophy} value={"Bayern Munich : 33"} color='#F5B041'/>
+            <StatCard name="Goalscores Player" icon={SportsSoccer} value={"Gerd Müller : 365"} color='#5DADE2'/>
+            <StatCard name="Current Champions" icon={SportsSoccerRounded} value={"Bayer Leverkusen"} color='#58D68D'/>
+            <StatCard name="Most Matchs" icon={SportsSoccerRounded} value={"Charly Körbel : 602"} color='#58D68D'/>
+            
            </motion.div>
 
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

@@ -1,21 +1,22 @@
 import { motion } from 'framer-motion';
 
 const data = [
-    {name : "Cristiano Ronaldo", value: 42},
-    {name : "Leo Messi", value: 40},
-    {name : "Ángel Di Maria", value: 41},
-    {name : "Neymar Jr", value: 33},
-    {name : "Ryan Giggs", value: 31},
-    {name : "Xavi Hernández", value: 30},
-    {name : "Thomas Müller", value: 30},
-    {name : "Karim Benzema", value: 29},
-    {name : "Andrés Iniesta", value: 29},
-    {name : "Kevin De Bruyne", value: 29},
+    {name : "Gareth Barry", value: 653},
+    {name : "James Milner", value: 637},
+    {name : "Ryan Giggs", value: 632},
+    {name : "Frank Lampard", value: 609},
+    {name : "David James", value: 572},
+    {name : "Gary Speed", value: 535},
+    {name : "Emile Heskey", value: 516},
+    {name : "Mark Schwarzer", value: 514},
+    {name : "Jamie Carragher", value: 508},
+    {name : "Phil Neville", value: 505},
 ]
 
 const top10Data = data.slice(0, 10).sort((a, b) => b.value - a.value);  // Trie et limite à top 10
 
-export default function TopAssitsChampionsLeague() {
+
+export default function TopApparencePL() {
   return (
     <motion.div
       className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-indigo-900'
@@ -23,13 +24,13 @@ export default function TopAssitsChampionsLeague() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
-      <h2 className='text-xl font-medium mb-4 text-indigo-100'>Top 10 Assits</h2>
+      <h2 className='text-xl font-medium mb-4 text-indigo-100'>Most Matchs Played</h2>
       
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         {top10Data.map((player, index) => (
-          <div key={index} className="flex items-center justify-between">
+          <div key={index} className="flex items-end justify-end">
             <span className="text-indigo-100">{player.name}</span>
-            <div className="flex-1 mx-2">  
+            <div className="flex-1 mx-4">  
               <motion.div
                 className="relative flex items-center"
                 initial={{ width: 0 }}
@@ -45,3 +46,4 @@ export default function TopAssitsChampionsLeague() {
     </motion.div>
   )
 }
+

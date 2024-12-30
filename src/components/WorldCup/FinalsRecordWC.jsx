@@ -5,7 +5,7 @@ const rawData = [
     {name : "Brazil", winner: 5, second: 2},
     {name : "Germany", winner: 4, second: 4},
     {name : "Italy", winner: 4, second: 2},
-    {name : "Argentine", winner: 3, second: 3},
+    {name : "Argentina", winner: 3, second: 3},
     {name : "France", winner: 2, second: 2},
     {name : "Uruguay", winner: 2, second: 0},
     {name : "Spain", winner: 1, second: 0},

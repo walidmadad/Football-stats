@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Header from "../components/comon/Header"
 import StatCard from "../components/comon/StatCard"
-import {ChartNoAxesCombined, Trophy} from "lucide-react"
+import { Trophy} from "lucide-react"
 import GoalsOverview from "../components/WorldCup/GoalsOverview"
 import WinnerWorldCupChart from "../components/WorldCup/WinnerWorldCupChart"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
@@ -20,10 +20,10 @@ export default function WorldCup() {
            animate={{opacity:1, y:0}}
            transition={{duration: 1}}
            >
-            <StatCard name="Goalscores Player" icon={SportsSoccer} value={"Miroslav Klose 16 Goals"} color='#5DADE2'/>
-            <StatCard name="Winners" icon={Trophy} value={"Brazil 5"} color='#F5B041'/>
-            <StatCard name="Goalscores Country" icon={SportsSoccerRounded} value={"Brazil 237"} color='#58D68D'/>
-            <StatCard name="Editions" icon={ChartNoAxesCombined} value={"22"} color='#F1948A'/>
+            <StatCard name="Winners" icon={Trophy} value={"Brazil : 5"} color='#F5B041'/>
+            <StatCard name="Goalscores Player" icon={SportsSoccer} value={"Miroslav Klose : 16"} color='#5DADE2'/>
+            <StatCard name="Current Champions" icon={SportsSoccerRounded} value={"Argentina"} color='#58D68D'/>
+            <StatCard name="Most Games" icon={SportsSoccerRounded} value={"Lionel Messi : 22"} color='#58D68D'/>
            </motion.div>
 
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

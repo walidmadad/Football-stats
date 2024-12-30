@@ -1,4 +1,3 @@
-import { ResponsiveContainer, BarChart, Tooltip, CartesianGrid, YAxis, XAxis, Bar} from 'recharts'
 import { motion } from 'framer-motion';
 
 
@@ -41,20 +40,20 @@ export default function WinnersPL() {
             <h2 className='text-lg font-medium mb-4 text-indigo-100'>Winners</h2>
 
             <div className="space-y-4">
-                    {data.map((team, index) => (
+                    {data.map((player, index) => (
                       <div key={index} className="flex items-center justify-between">
-                        <span className="text-indigo-100">{team.name}</span>
+                        <span className="text-indigo-100">{player.name}</span>
                         <div className="flex-1 mx-10">  
                           <motion.div
                             className="relative flex items-center"
                             initial={{ width: 0 }}
-                            animate={{ width: `${team.value * 2}%` }} 
+                            animate={{ width: `${player.value * 2}%` }} 
                             transition={{ duration: 0.8 }}
                           >
                             <div className="h-6 bg-indigo-600 rounded" />
                           </motion.div>
                         </div>
-                        <span className="text-sm text-indigo-100">{team.value}</span> 
+                        <span className="text-sm text-indigo-100">{player.value}</span> 
                       </div>
                     ))}
                   </div>

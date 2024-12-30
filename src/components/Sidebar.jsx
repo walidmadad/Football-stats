@@ -1,5 +1,5 @@
 import { Menu,} from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {AnimatePresence, motion} from 'framer-motion'
 import { Link } from "react-router";
 import Ucl from "../icons/ucl.png";
@@ -23,9 +23,28 @@ const SIDEBAR_ITEMS = [
 
 export default function Sidebar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    // Hook pour détecter la taille de l'écran
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setIsSidebarOpen(false); // Sidebar fermée par défaut sur mobile
+            } else {
+                setIsSidebarOpen(true); // Sidebar ouverte par défaut sur desktop
+            }
+        };
+
+        // Vérifier la taille au chargement
+        handleResize();
+
+        // Ajouter un écouteur d'événements pour redimensionner la fenêtre
+        window.addEventListener("resize", handleResize);
+
+        // Nettoyer l'événement à la fermeture du composant
+        return () => window.removeEventListener("resize", handleResize);
+    }, []); // Ce hook ne s'exécute qu'une seule fois au chargement
   return (
     <motion.div
-    className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isSidebarOpen ? 'w-64' : 'w-20'}`}
+    className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isSidebarOpen ? 'w-64' : 'w-20'} `}
     animate={{ width: isSidebarOpen ? 256 : 100}}
     >
         <div className="h-full bg-indigo-950 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-indigo-900">
@@ -64,6 +83,8 @@ export default function Sidebar() {
                 ))}
             </nav>
         </div>
+
+        
     </motion.div>
 
   )

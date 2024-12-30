@@ -3,6 +3,7 @@ import StatCard from "../components/comon/StatCard"
 import { motion } from "framer-motion"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 import { Trophy} from "lucide-react"
+import { WinnersBundesliga } from "../components/BundesLiga/WinnersBundesliga"
 
 export default function Bundesliga() {
   return (
@@ -24,6 +25,9 @@ export default function Bundesliga() {
             
            </motion.div>
 
+           <div className="grid grid-cols-1 lg:grid-cols gap-8">
+            <WinnersBundesliga/>
+           </div>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
            </div>
         </main>

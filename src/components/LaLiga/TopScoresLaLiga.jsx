@@ -24,7 +24,7 @@ export default function TopScoresLaLiga() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <h2 className='text-xl font-medium mb-4 text-indigo-100'>Most Matchs Played</h2>
+        <h2 className='text-xl font-medium mb-4 text-indigo-100'>Top 10 Most Goals</h2>
         
         <div className="space-y-4 ">
           {top10Data.map((player, index) => (

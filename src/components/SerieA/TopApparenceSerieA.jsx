@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion';
 
 const data = [
-    {name : "Alan Shearer", value: 260},
-    {name : "Harry Kane", value: 213},
-    {name : "Wayne Rooney", value: 208},
-    {name : "Andrew Cole", value: 187},
-    {name : "Sergio Agüero", value: 184},
-    {name : "Frank Lampard", value: 177},
-    {name : "Thierry Henry", value: 175},
-    {name : "Mohamed Salah", value: 174},
-    {name : "Robbie Fowler", value: 163},
-    {name : "Jermain Defoe", value: 162},
-]
+    {name : "Gianluigi Buffon", value: 657},
+    {name : "Paolo Maldini", value: 647 },
+    {name : "Francesco Totti", value: 619 },
+    {name : "Javier Zanetti", value: 615 },
+    {name : "Gianluca Pagliuca", value: 592},
+    {name : "Dino Zoff", value: 570},
+    {name : "Samir Handanović", value: 566},
+    {name : "Pietro Vierchowod", value: 562},
+    {name : "Fabio Quagliarella", value: 556},
+    {name : "Roberto Mancini", value: 541},
+  ]
 
 const top10Data = data.slice(0, 10).sort((a, b) => b.value - a.value);  // Trie et limite à top 10
 
 
-export default function TopScoresPL() {
+export default function TopApparenceSerieA() {
   return (
       <motion.div
         className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-indigo-900'
@@ -24,7 +24,7 @@ export default function TopScoresPL() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
       >
-        <h2 className='text-xl font-medium mb-4 text-indigo-100'>Top 10 Most Goals</h2>
+        <h2 className='text-xl font-medium mb-4 text-indigo-100'>Top 10 Most Appearances</h2>
         
         <div className="space-y-4 ">
           {top10Data.map((player, index) => (

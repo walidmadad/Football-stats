@@ -28,7 +28,7 @@ export default function PremierLeague() {
             <StatCard name="Most Matchs" icon={ChartNoAxesCombined} value={"Gareth Barry : 653"} color='#F1948A'/>
            </motion.div>
 
-           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-5">
+           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-6">
             <WinnersPL/>
            </div>
 

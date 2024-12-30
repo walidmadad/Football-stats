@@ -23,7 +23,7 @@ export default function TopAssitsChampionsLeague() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
-      <h2 className='text-xl font-medium mb-4 text-indigo-100'>Top 10 Assits</h2>
+      <h2 className='text-xl font-medium mb-4 text-indigo-100'>Top 10 Most Assists</h2>
       
       <div className="space-y-4">
         {top10Data.map((player, index) => (

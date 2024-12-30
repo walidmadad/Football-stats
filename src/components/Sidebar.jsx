@@ -26,14 +26,14 @@ export default function Sidebar() {
   return (
     <motion.div
     className={`relative z-10 transition-all duration-300 ease-in-out flex-shrink-0 ${isSidebarOpen ? 'w-64' : 'w-20'}`}
-    animate={{ width: isSidebarOpen ? 256 : 80}}
+    animate={{ width: isSidebarOpen ? 256 : 100}}
     >
         <div className="h-full bg-indigo-950 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r border-indigo-900">
             <motion.button
                 whileHover={{ scale: 1.1}}
                 whileTap={{ scale:0.9}}
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                className="p-2 rounded-full hover:bg-indigo-900 transition-colors max-w-fit"
+                className="p-4 rounded-full hover:bg-indigo-900 transition-colors max-w-fit"
             >
                 <Menu size={24}/>
 

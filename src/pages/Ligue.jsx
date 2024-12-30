@@ -4,6 +4,10 @@ import { motion } from "framer-motion"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 import {Trophy} from "lucide-react"
 import { WinnersLigueUn } from "../components/Ligue1/WinnersLigueUn"
+import TopApparenceLigue1 from "../components/Ligue1/TopApparenceLigue1"
+import TopScoresLigue1 from "../components/Ligue1/TopScoresLigue1"
+import TopAssitsLigue1 from "../components/Ligue1/TopAssitsLigue1"
+import TopCleansheetLigue1 from "../components/Ligue1/TopCleansheetLigue1"
 
 export default function Ligue() {
   return (
@@ -24,8 +28,14 @@ export default function Ligue() {
             <StatCard name="Most Matchs" icon={SportsSoccerRounded} value={"Mickaël Landreau : 618"} color='#58D68D'/>
            </motion.div>
 
-           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+           <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mb-6">
             <WinnersLigueUn/>
+           </div>
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <TopApparenceLigue1/>
+            <TopScoresLigue1/>
+            <TopAssitsLigue1/>
+            <TopCleansheetLigue1/>
            </div>
         </main>
     </div>

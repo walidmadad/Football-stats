@@ -25,7 +25,7 @@ export function WinnersLaLigaChart() {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2 }}
 		>
-			<h2 className='text-lg font-medium mb-4 text-indigo-100'>Winners</h2>
+			<h2 className='text-lg font-medium mb-4 text-indigo-100'>All-Time Winners</h2>
 
 			<div className='h-80 '>
             <ResponsiveContainer width="100%" height="100%">

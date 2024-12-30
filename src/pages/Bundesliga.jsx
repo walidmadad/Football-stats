@@ -4,6 +4,10 @@ import { motion } from "framer-motion"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 import { Trophy} from "lucide-react"
 import { WinnersBundesliga } from "../components/BundesLiga/WinnersBundesliga"
+import TopApparenceBundesliga from "../components/BundesLiga/TopApparenceBundesliga"
+import TopScoresBundesliga from "../components/BundesLiga/TopScoresBundesliga"
+import TopAssitsBundesliga from "../components/BundesLiga/TopAssitsBundesliga"
+import TopCleansheetBundesliga from "../components/SerieA/TopCleansheetSerieA"
 
 export default function Bundesliga() {
   return (
@@ -25,10 +29,14 @@ export default function Bundesliga() {
             
            </motion.div>
 
-           <div className="grid grid-cols-1 lg:grid-cols gap-8">
+           <div className="grid grid-cols-1 lg:grid-cols gap-8 mb-6">
             <WinnersBundesliga/>
            </div>
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <TopApparenceBundesliga/>
+            <TopScoresBundesliga/>
+            <TopAssitsBundesliga/>
+            <TopCleansheetBundesliga/>
            </div>
         </main>
     </div>

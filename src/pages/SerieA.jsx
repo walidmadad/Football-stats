@@ -4,6 +4,10 @@ import { motion } from "framer-motion"
 import {SportsSoccer, SportsSoccerRounded } from "@mui/icons-material"
 import { Trophy} from "lucide-react"
 import { WinnersSerieA, WinnersSerieAChart } from "../components/SerieA/WinnersSerieA"
+import TopApparenceSerieA from "../components/SerieA/TopApparenceSerieA"
+import TopScoresSerieA from "../components/SerieA/TopScoresSerieA"
+import TopAssitsSerieA from "../components/SerieA/TopAssitsSerieA"
+import TopCleansheetSerieA from "../components/SerieA/TopCleansheetSerieA"
 
 export default function SerieA() {
   return (
@@ -28,6 +32,10 @@ export default function SerieA() {
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <WinnersSerieAChart/>
             <WinnersSerieA/>
+            <TopApparenceSerieA/>
+            <TopScoresSerieA/>
+            <TopAssitsSerieA/>
+            <TopCleansheetSerieA/>
            </div>
         </main>
     </div>

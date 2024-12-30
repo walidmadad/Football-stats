@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion';
 
 const data = [
-    {name : "Ryan Giggs", value: 162},
-    {name : "Kevin De Bruyne", value: 114},
-    {name : "Cesc Fàbregas", value: 111},
-    {name : "Wayne Rooney", value: 103},
-    {name : "Frank Lampard", value: 102},
-    {name : "Dennis Bergkamp", value: 94},
-    {name : "David Silva", value: 93},
-    {name : "Steven Gerrard", value: 92},
-    {name : "James Milner", value: 89},
-    {name : "Mohamed Salah", value: 82},
+  {name : "Thomas Müller", value: 181},
+  {name : "Franck Ribéry", value: 103 },
+  {name : "Andreas Möller", value: 98 },
+  {name : "Marco Reus", value: 98 },
+  {name : "Zé Roberto", value: 90},
+  {name : "Mehmet Scholl", value: 86},
+  {name : "Mario Basler", value: 77},
+  {name : "Thomas Hässler", value: 75},
+  {name : "Stefan Effenberg", value: 75},
+  {name : "Claudio Pizarro", value: 75},
 ]
 
 const top10Data = data.slice(0, 10).sort((a, b) => b.value - a.value);  // Trie et limite à top 10
 
 
-export default function TopAssitsPL() {
+export default function TopAssitsBundesliga() {
     return (
         <motion.div
           className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-indigo-900'

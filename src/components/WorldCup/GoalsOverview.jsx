@@ -35,7 +35,7 @@ export default function GoalsOverview() {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2 }}
 		>
-			<h2 className='text-lg font-medium mb-4 text-gray-100'>Goals Overview</h2>
+			<h2 className='text-lg font-medium mb-4 text-gray-100'>Goals Scored by Competition</h2>
 
 			<div className='h-80 -ml-10'>
 				<ResponsiveContainer width={"100%"} height={"100%"}>

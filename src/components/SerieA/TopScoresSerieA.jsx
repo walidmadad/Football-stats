@@ -1,22 +1,24 @@
 import { motion } from 'framer-motion';
 
 const data = [
-    {name : "Alan Shearer", value: 260},
-    {name : "Harry Kane", value: 213},
-    {name : "Wayne Rooney", value: 208},
-    {name : "Andrew Cole", value: 187},
-    {name : "Sergio Agüero", value: 184},
-    {name : "Frank Lampard", value: 177},
-    {name : "Thierry Henry", value: 175},
-    {name : "Mohamed Salah", value: 174},
-    {name : "Robbie Fowler", value: 163},
-    {name : "Jermain Defoe", value: 162},
-]
+    {name : "Silvio Piola", value: 274},
+    {name : "Francesco Totti", value: 250 },
+    {name : "Gunnar Nordahl", value: 225 },
+    {name : "Giuseppe Meazza", value: 216 },
+    {name : "José Altafini", value: 216},
+    {name : "Antonio Di Natale", value: 209},
+    {name : "Roberto Baggio", value: 205},
+    {name : "Ciro Immobile", value: 201},
+    {name : "Kurt Hamrin", value: 190},
+    {name : "Giuseppe Signori", value: 188},
+    {name : "Alessandro Del Piero", value: 188},
+    {name : "Alberto Gilardino", value: 188},
+  ]
 
 const top10Data = data.slice(0, 10).sort((a, b) => b.value - a.value);  // Trie et limite à top 10
 
 
-export default function TopScoresPL() {
+export default function TopScoresSerieA() {
   return (
       <motion.div
         className='bg-indigo-950 bg-opacity-50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-indigo-900'

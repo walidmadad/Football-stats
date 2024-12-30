@@ -43,7 +43,7 @@ export function WinnersBundesliga() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
         >
-            <h2 className='text-lg font-medium mb-4 text-indigo-100'>Winners</h2>
+            <h2 className='text-lg font-medium mb-4 text-indigo-100'>All-Time Winners</h2>
 
             <div className="space-y-4">
                     {data.map((player, index) => (

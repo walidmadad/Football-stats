@@ -13,7 +13,7 @@ import MostPenaltiesScoredUCL from "../components/ChampionsLeague/MostPenaltiesS
 export default function UCL() {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-        <Header title="Champions League Statistiques"/>
+        <Header title="Champions League Statistics"/>
 
         <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8 xl:px-20">
            {/* STATS */}

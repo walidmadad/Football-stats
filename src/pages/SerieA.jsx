@@ -12,7 +12,7 @@ import TopCleansheetSerieA from "../components/SerieA/TopCleansheetSerieA"
 export default function SerieA() {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-    <Header title="Seria A Statistiques"/>
+    <Header title="Seria A Statistics"/>
 
         <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8 xl:px-20">
            {/* STATS */}

@@ -10,7 +10,7 @@ import TopScoresWorldCupr from "../components/WorldCup/TopScoresWorldCupr"
 export default function WorldCup() {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-        <Header title="World Cup Statistiques"/>
+        <Header title="World Cup Statistics"/>
 
         <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8 xl:px-20">
            {/* STATS */}

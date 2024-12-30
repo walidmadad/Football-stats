@@ -12,7 +12,7 @@ import TopCleansheetLigue1 from "../components/Ligue1/TopCleansheetLigue1"
 export default function Ligue() {
   return (
     <div className="flex-1 overflow-auto relative z-10">
-        <Header title="Ligue 1 Statistiques"/>
+        <Header title="Ligue 1 Statistics"/>
 
         <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8 xl:px-20">
            {/* STATS */}

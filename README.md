@@ -87,3 +87,8 @@ src/
 Contributions, suggestions et retours sont les bienvenus ! N'hésitez pas à ouvrir une issue ou une pull request.
 
 ---
+
+## 📜 Licence
+
+Ce projet est sous licence MIT. Consultez le fichier [LICENSE](./LICENSE) pour plus d'informations.
+

@@ -24,7 +24,7 @@ export default function UCL() {
            transition={{duration: 1}}
            >
             <StatCard name="Goalscores Player" icon={SportsSoccer} value={"Cristiano Ronaldo 140"} color='#5DADE2'/>
-            <StatCard name="Winners" icon={Trophy} value={"Real Madrid 14"} color='#F5B041'/>
+            <StatCard name="Winners" icon={Trophy} value={"Real Madrid 15"} color='#F5B041'/>
             <StatCard name="Current Champions" icon={SportsSoccerRounded} value={"Real Madrid"} color='#58D68D'/>
             <StatCard name="Editions" icon={ChartNoAxesCombined} value={"69"} color='#F1948A'/>
            </motion.div>
